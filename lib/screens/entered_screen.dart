@@ -1,7 +1,12 @@
+import 'dart:io';
 import 'package:csv/csv.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:winhacks_21/utilities/constants.dart';
+import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
+
+firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
 
 class EnteredScreen extends StatefulWidget {
   @override
@@ -17,12 +22,21 @@ class _EnteredScreenState extends State<EnteredScreen> {
     super.initState();
   }
 
-  void _loadCSV() async {
-    final _rawData = await rootBundle.loadString("assets/Attendance_Stats.csv");
+  Future<String> downloadFile() async {
+    File downloadCsv;
+    await firebase_storage.FirebaseStorage.instance.ref().putFile(downloadCsv);
+    print("ooooooooffffffff$downloadCsv");
+    return downloadCsv.path;
+  }
+
+  Future<void> _loadCSV() async {
+    final _rawData = await rootBundle.loadString('assets/Attendance_Stats.csv');
+    print("ooooooooffffffff");
     List<List<dynamic>> _listData = CsvToListConverter().convert(_rawData);
     setState(() {
       _data = _listData;
     });
+    print(_data);
   }
 
   @override
