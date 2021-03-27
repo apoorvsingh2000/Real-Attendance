@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "710236263091",
+    "project_id": "winhacks21",
+    "storage_bucket": "winhacks21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710236263091:android:1012a12de52ea2a82dd6c6",
+        "android_client_info": {
+          "package_name": "com.apoorvsingh2000.winhacks_21"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710236263091-etvieui02drb34809sln4sa0hq9s9s1n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apoorvsingh2000.winhacks_21",
+            "certificate_hash": "f53083c91af3d1b9e3b8a0a40d8456b6c4f23f40"
+          }
+        },
+        {
+          "client_id": "710236263091-0cjpr4u43nlit07bffbjob2j2c5msare.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD02acFHsKfNnNcYIXE1WEEOawEHZM2dRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710236263091-0cjpr4u43nlit07bffbjob2j2c5msare.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
