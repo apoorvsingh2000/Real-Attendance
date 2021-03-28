@@ -2,6 +2,10 @@
 ## Design Link
 https://a360.co/3ruFXul
 
+## Design screenshots
+![hack busters pi cam v2](https://user-images.githubusercontent.com/58786316/112756383-8a539580-9002-11eb-8132-c51748babe0b.png)
+
+
 ## Inspiration
 Teachers  of every school/university have often come across the problem of students entering fake attendances or students claiming for attendance even after their absence in the class. 
 This practice is unfair towards the students attending the lectures sincerely and it is also tedious work for the professors to keep track of the attendance of every student enrolled in their course.
