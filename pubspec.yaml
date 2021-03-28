@@ -17,8 +17,8 @@ dependencies:
   firebase_core:
   cloud_firestore:
   firebase_storage:
-  google_sign_in:
-  http:
+  path_provider:
+  dio:
   animated_text_kit:
 
 dev_dependencies:

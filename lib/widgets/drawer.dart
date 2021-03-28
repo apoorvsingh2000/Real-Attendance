@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:winhacks_21/screens/login_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 double screenWidth(BuildContext context) => MediaQuery.of(context).size.width;
 double screenHeight(BuildContext context) => MediaQuery.of(context).size.height;
@@ -26,14 +29,14 @@ Drawer userHomeDrawer(BuildContext context) {
               children: <Widget>[
                 ListTile(
                   title: Text(
-                    'Winhacks',
-                    style: TextStyle(
+                    'Third Eye',
+                    style: GoogleFonts.keaniaOne(
                         color: Colors.white60, fontSize: screenWidth(context) * 0.1),
                   ),
-                  trailing: Icon(
-                    Icons.home,
-                    size: screenWidth(context) * 0.12,
-                    color: Colors.white60,
+                  trailing: CircleAvatar(
+                    child: Image.asset('images/att.jpeg'),
+                    radius: screenWidth(context) * 0.1,
+                    backgroundColor: Colors.white60,
                   ),
                 ),
                 SizedBox(
@@ -89,6 +92,10 @@ Drawer userHomeDrawer(BuildContext context) {
           NavTile(
             icon: Icon(Icons.exit_to_app),
             text: 'Logout',
+            onTap: () {
+              firebaseAuth.signOut();
+              Navigator.pop(context);
+            },
           ),
         ],
       ),

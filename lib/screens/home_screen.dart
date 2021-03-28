@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:winhacks_21/screens/entered_screen.dart';
-import 'package:winhacks_21/screens/present_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:winhacks_21/screens/absent_screen.dart';
+import 'package:winhacks_21/screens/status_screen.dart';
 import 'package:winhacks_21/widgets/drawer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,8 +20,8 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Color(0xff013C38).withOpacity(0.8),
             elevation: 10.0,
             title: Text(
-              'Winhacks',
-              style: TextStyle(color: Colors.white60),
+              'Third Eye',
+              style: GoogleFonts.keaniaOne(color: Colors.white60),
             ),
             bottom: TabBar(
               labelColor: Colors.white,
@@ -37,16 +38,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     Color(0xff005246),
                   ])),
               tabs: [
-                Tab(text: 'Entered in Class'),
-                Tab(text: 'Actually Present'),
+                Tab(text: 'Absent in Class'),
+                Tab(text: 'Activity'),
               ],
             ),
           ),
           drawer: userHomeDrawer(context),
           body: TabBarView(
             children: [
-              EnteredScreen(),
-              PresentScreen(),
+              AbsentScreen(),
+              StatusScreen(),
             ],
           ),
         ),

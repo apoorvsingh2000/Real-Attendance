@@ -3,8 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:winhacks_21/utilities/constants.dart';
-
 import 'home_screen.dart';
+
+final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 
 class LoginScreen extends StatefulWidget {
   static const String id = 'login_screen';
@@ -14,7 +15,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   String mEmail, mPassword;
   bool showSpinner = false;
 
@@ -55,11 +55,9 @@ class _LoginScreenState extends State<LoginScreen> {
               Center(
                 child: TypewriterAnimatedTextKit(
                   speed: Duration(milliseconds: 500),
-                  text: ['Winhacks'],
-                  textStyle: GoogleFonts.k2d(
-                      fontSize: 45.0,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white60),
+                  text: ['Third Eye'],
+                  textStyle:
+                      GoogleFonts.keaniaOne(fontSize: 45.0, color: Colors.white60),
                 ),
               ),
               SizedBox(
@@ -101,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       });
                       try {
                         final newUser =
-                            await _firebaseAuth.signInWithEmailAndPassword(
+                            await firebaseAuth.signInWithEmailAndPassword(
                                 email: mEmail, password: mPassword);
                         if (newUser != null) {
                           Navigator.push(
@@ -118,7 +116,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                     child: Text(
                       'Log In',
-                      style: TextStyle(color: Colors.white60, fontSize: 20.0),
+                      style: GoogleFonts.keaniaOne(
+                          color: Colors.white60, fontSize: 20.0),
                     )),
               ),
             ],
