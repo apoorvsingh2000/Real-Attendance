@@ -6,6 +6,8 @@ https://a360.co/3ruFXul
 ![hack busters pi cam v2](https://user-images.githubusercontent.com/58786316/112756383-8a539580-9002-11eb-8132-c51748babe0b.png)
 ![WhatsApp Image 2021-03-28 at 8 18 40 PM](https://user-images.githubusercontent.com/58786316/112756467-ed452c80-9002-11eb-803b-d8ba15d4a377.jpeg)
 
+## Youtube link
+https://www.youtube.com/watch?v=gRbtRnith5I
 
 ## Inspiration
 Teachers  of every school/university have often come across the problem of students entering fake attendances or students claiming for attendance even after their absence in the class. 
