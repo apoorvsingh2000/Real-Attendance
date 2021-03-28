@@ -1,4 +1,7 @@
 # winhacks_21
+## Design Link
+https://a360.co/3ruFXul
+
 ## Inspiration
 Teachers  of every school/university have often come across the problem of students entering fake attendances or students claiming for attendance even after their absence in the class. 
 This practice is unfair towards the students attending the lectures sincerely and it is also tedious work for the professors to keep track of the attendance of every student enrolled in their course.
