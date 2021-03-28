@@ -34,11 +34,9 @@ The name and roll no of the student is stored in an excel sheet.
 
 We have used OpenCV and face recognition library to detect faces of the students.
 
-##App screenshots
-https://user-images.githubusercontent.com/58786316/112756049-f1704a80-9000-11eb-990f-e999d54fbcc7.jpeg
-https://user-images.githubusercontent.com/58786316/112756097-2b415100-9001-11eb-8a12-b75e5c274032.jpeg
-https://user-images.githubusercontent.com/58786316/112756105-35fbe600-9001-11eb-88e6-fc49d80a1cc1.jpeg
-https://user-images.githubusercontent.com/58786316/112756116-3f854e00-9001-11eb-969d-5332fc234fe2.jpeg
+## App screenshots
+![WhatsApp Image 2021-03-28 at 8 04 05 PM](https://user-images.githubusercontent.com/58786316/112756169-9c810400-9001-11eb-99cc-3f7555106ad7.jpeg)
+
 
 ## Challenges we ran into
 In a real life scenario, only one image per student is obtained for training set. The challenge was to augment a given image to produce 100 more images and yet maintain the accuracy of the deep learning model.
