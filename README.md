@@ -36,6 +36,9 @@ We have used OpenCV and face recognition library to detect faces of the students
 
 ## App screenshots
 ![WhatsApp Image 2021-03-28 at 8 04 05 PM](https://user-images.githubusercontent.com/58786316/112756169-9c810400-9001-11eb-99cc-3f7555106ad7.jpeg)
+![WhatsApp Image 2021-03-28 at 8 04 05 PM (1)](https://user-images.githubusercontent.com/58786316/112756186-b0c50100-9001-11eb-84f4-a4af773177de.jpeg)
+![WhatsApp Image 2021-03-28 at 8 04 55 PM](https://user-images.githubusercontent.com/58786316/112756270-0dc0b700-9002-11eb-8fa0-b05aa81f95b1.jpeg)
+![WhatsApp Image 2021-03-28 at 8 04 55 PM (1)](https://user-images.githubusercontent.com/58786316/112756279-174a1f00-9002-11eb-85f4-315dbf61a500.jpeg)
 
 
 ## Challenges we ran into
@@ -44,9 +47,12 @@ In a real life scenario, only one image per student is obtained for training set
 The other challenge faced was issue in the clarity of face detection. Even though there was a face visible in the window the software was sometimes unable to detect it sometimes. This issue was faced due to low quality camera.
 
 ## Accomplishments that we're proud of
-
+Successfully generated a design of project model
+Successfully collected data using OpenCV and sent it over the internet to the user to be displayed on app.
 
 ## What we learned
+Image Augmentation
+Working on data on Firebase
 
 ## What's next for Third Eye
 Further using even advanced face recognition algorithms/ deep learning algorithms, the emotions of a students face can be captured and this data can help recognize how well the student is able to grasp the concepts taught in the lecture.
